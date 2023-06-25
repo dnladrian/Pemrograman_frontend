@@ -1,0 +1,60 @@
+<body>
+    <div id="root"></div>
+    
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        function Hello(props) {
+
+            return(
+                <div>
+                    <h1>Saya {props.nama} </h1>
+                    <p>Jurusan {props.nama} - Frontend Engineer</p>
+                </div>
+            );
+        }
+        function Header() {
+            return(
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            );
+        }
+
+        function Main() {
+            return(
+                <main>
+                    <Hello nama="Daniel" jurusan="informatika" />
+                    <Hello nama="Adrian" jurusan="informatika" />
+                    <Hello nama="Aryasena"jurusan="Informatika" />    
+                </main>
+            );
+        }
+
+        function Footer() {
+            return(
+                <footer>
+                    <h2>copyright @danieladrian</h2>
+                    <p>create by react.js</p>
+                </footer>
+            );
+        }
+        const rootElement = document.getElementById("root");
+
+        // buat root React
+        const root = ReactDOM.createRoot(rootElement);
+
+        // Render Component Hello ke root
+        root.render(<Hello></Hello>);
+        // root.render(<Header></Header>);
+        root.render(<Main></Main>);
+        // root.render(<Footer></Footer>);
+    </script>
+</body>

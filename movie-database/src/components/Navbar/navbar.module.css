@@ -1,0 +1,25 @@
+.container {
+    background-color: aqua;
+    padding: 1rem;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar__brand {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.navbar__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none
+}
+
+.navbar__item {
+    margin-bottom: 1rem;
+}
